@@ -18,10 +18,12 @@ header, footer {
 }
 
 nav {
+  padding: 30px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 
 nav img {
   height: 50px;
@@ -54,43 +56,95 @@ section {
 }
 
 /* Hero Section */
-.hero {
-  background: url('images/Object.png') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero-text h1 {
-  font-size: 64px;
-  margin-bottom: 20px;
-}
-
-.hero-tags {
+.hero-section {
+  background-image: url('./images/Object.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+
+.hero-section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-top: 80px;
+}
+
+.hero span {
+  font-weight: 600;
+  margin: 10px;
 }
 
 .hero button {
-  background-color: #ff6565;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #FF6565;
   border: none;
-  padding: 15px 35px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  color: #fff;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
   cursor: pointer;
 }
+
+.pros {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.pros .speaker {
+  text-align: center;
+  color: white;
+}
+
+.pros-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 60px;
+  background: rgba(0, 0, 0, 0.2); /* Optional, match Figma blur */
+  color: white;
+}
+.pros-section img {
+  border-radius: 50%;
+  width: 120px;
+}
+
+.purple {
+  color: #C271FF;
+}
+
 
 /* Learn from the pros */
 .pros {
   text-align: center;
   padding: 60px 20px;
-  background-color: #fff;
+  
 }
 
 .pros h2 {
@@ -127,6 +181,16 @@ section {
 }
 
 /* Testimonial Section */
+.testimonial-section {
+  background-color: #C271FF;
+  color: white;
+  padding: 60px;
+}
+.testimonial-section blockquote {
+  font-style: italic;
+  font-size: 20px;
+}
+
 .testimonial {
   background-color: #f9f9f9;
   padding: 60px 20px;
@@ -171,7 +235,24 @@ section {
   color: #888;
 }
 
-/* Tutorials Section */
+/* Popular Tutorials Section */
+.popular-section {
+  padding: 80px 60px;
+}
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.tutorial-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+}
+.tutorial-card img:first-child {
+  width: 100%;
+}
+
 .tutorials {
   padding: 60px 20px;
   background-color: #fff;
@@ -256,6 +337,16 @@ p, blockquote {
 }
 
 /* Membership Section */
+.membership-section {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  padding: 80px 60px;
+}
+.membership-section h2 span {
+  color: #C271FF;
+}
+
 .membership {
   background-color: #f9f9f9;
   padding: 60px 20px;
@@ -358,7 +449,7 @@ p, blockquote {
 
 /* Footer */
 footer {
-  background-color: #000;
+  background-color: #141313;
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -384,7 +475,7 @@ footer {
 
 .footer-socials i {
   font-size: 24px;
-  color: white;
+  color: rgb(251, 249, 249);
   margin: 0 10px;
   transition: color 0.3s ease;
 }
@@ -403,7 +494,7 @@ footer p {
 footer {
   text-align: center;
   padding: 30px 0;
-  background-color: #f5f5f5;
+  background-color: #030F20;
 }
 
 footer img {
