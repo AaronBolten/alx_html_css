@@ -1,3 +1,4 @@
+
 /* Reset and fonts */
 
 
@@ -140,87 +141,47 @@ body {
   }
 }
 
-
-/* Contact Section */
-.contact-section {
-  background-color: #fff;
-  color: #071629;
-  padding: 80px 20px;
+/* What We Do */
+.what-we-do {
+  background: white;
   text-align: center;
+  padding: 60px 20px;
 }
 
-.contact-section h2 {
+.what-we-do h2 {
   font-size: 28px;
-  margin-bottom: 40px;
+  color: #071629;
 }
 
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
+.what-we-do p {
+  max-width: 700px;
+  margin: 20px auto 40px;
+  line-height: 1.6;
 }
 
-.contact-form .form-group {
-  margin-bottom: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  font-family: var(--font-main);
-}
-
-.contact-form button {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  transition: opacity 0.3s;
-  margin-top: 10px;
-}
-
-.contact-form button:hover,
-.contact-form button:active {
-  opacity: 0.9;
-}
-
-/* Footer Section */
-.footer {
-  background-color: #071629;
-  padding: 30px 20px 15px;
-  color: #fff;
-  text-align: center;
-}
-
-.footer-container {
+.features {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
-.footer-logo img {
-  width: 160px;
+.feature-item {
+  width: 200px;
+  margin: 20px;
 }
 
-.footer-socials a {
-  margin: 0 10px;
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none;
-  transition: color 0.3s;
+.feature-item span {
+  font-size: 48px;
+  color: #ff6565;
 }
 
-.footer-socials a:hover {
-  color: #FF6565;
+.feature-item h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+  color: #071629;
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #071629;
 }
